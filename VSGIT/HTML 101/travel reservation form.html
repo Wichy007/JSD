@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation Page</title>
+    <style>
+        div{
+            margin-top: 5px;
+        }
+        input{
+            border: 0.5px solid lightgray;
+            box-shadow: -1px -1px lightgray;           
+        }
+    </style>
+</head>
+<body>
+    <h1>Travel reservation form</h1>
+    <p><b>* denotes mandatory</b></p>
+    <form>
+        <div class="input-area" id="firstname-lastname">
+            <label for="">Full name*:</label><br>
+            <input type="text" placeholder="FirstName LastName" required>
+        </div>
+        <div class="input-area" id="email">
+            <label for="">Email address*:</label><br>
+            <input type="email" placeholder="EMAIL_ADDRESS" required>
+        </div>
+        <div class="select-choice" id="package">
+            <label for="">Select Tour Package*:</label><br>
+            <select name="" id="">
+                <option value="">Goa</option>
+                <option value="">Hawaii</option>
+                <option value="">srichang</option>
+            </select>
+        </div>
+        <div class="input-area" id="arrival-date">
+            <label for="">Arrival date*:</label><br>
+            <input type="date" placeholder="dd/mm/yyyy" required>
+        </div>
+        <div class="input-area" id="number-of-person">
+            <label for="">Number of person*:</label><br>
+            <input type="number" placeholder="PLEASE FILL NUMBER" required>
+        </div>
+        <div class="avail-choice" id="avail">
+            <label for="">What would you want to avail?*</label><br>
+            Boarding <input type="checkbox" name="too"><br>
+            Fooding <input type="checkbox" name="too" ><br>
+            Sight seeing <input type="checkbox" name="too">
+
+        </div>
+        <div class="input-area" id="discount-code">
+            <label for="">Discount Coupon code:</label><br>
+            <input type="text" placeholder="FirstName LastName" required>
+        </div>
+        <div class="term-choice" id="condotion-radio">
+            <label for="">Terms and conditions*</label><br>
+            <input type="radio"> I agree 
+            <input type="radio"> I disagree
+        </div>
+        <div class="button">
+            <input type="submit" value="Complete reservation">
+        </div>
+
+    </form>
+</body>
+</html>
